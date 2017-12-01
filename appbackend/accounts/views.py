@@ -6,7 +6,7 @@ def index(request):
 	return HttpResponse("post here")	
 
 def login(request):
-	if method.request == "POST":
+	if request.method == "POST":
 		x = request.POST.get('user_name','password')
 		return x
 
