@@ -15,11 +15,13 @@ def login(request):
 	if request.method == "POST":
 		email = request.POST.get('email','')
 		passwd = request.POST.get('password','')
-		x = Users.objects.filter(user_name=email,user_password=passwd).exists()
+		x = Users.objects.filter(user_name=email).exists()
 		if x == True:
-			x = Users.objects.get(user_name = email)
-			return HttpResponse(x.user_name)
+			y  = Users.objects.get(user_name = email)
+			if y.user_password == passwd:
+				return HttpResponse(0)
+			else:
+				return HttpResponse(2)
 		else:
 			user = Users.objects.create(user_name = email, user_password=passwd,)
-		return HttpResponse(email)
-
+			return HttpResponse(1)
