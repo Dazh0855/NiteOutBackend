@@ -4,7 +4,7 @@ Server/Database source code.\
 This repo requires the installation of Django framework.
 
 # Guide
-This is a repository for the backend work for the project, Nite Out. This repo includes python code to initialize our database,
+This is a repository for the backend work for the project, Nite Out. Includes python code to initialize our database,
 create urls, and make api calls.
 Note that this app will not run without our running DigitalOcean server.
 # Database
