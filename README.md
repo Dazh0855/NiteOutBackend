@@ -1,6 +1,7 @@
 # team44backend
 
-Server/database
+Server/Database source code
+This repo requires the istallation of Django framework.
 
 # Guide
 This is a repository for the backend work for the project, Nite Out. This repo includes python code to initialize our database,
