@@ -19,6 +19,6 @@ To view code used to populate login database, view:\
 ```team44backend/appbackend/accounts/views.py```\
 To view url's to access login data, view:\
 ```team44backend/appbackend/accounts/urls.py```
- # tests
+ # Tests
  Tests can be found here:\
 ```team44backend/appbackend/api/tests.py```
